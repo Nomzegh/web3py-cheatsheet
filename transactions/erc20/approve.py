@@ -15,7 +15,7 @@ contract = "0xabcdef..."  # whatever ERC20 contract address
 contract = web3.eth.contract(contract, abi=abi)
 
 
-def buy(private_key: str, cycles: int) -> str:
+def approve(private_key: str, cycles: int) -> str:
     for i in range(int(cycles)):
         account = web3.eth.account.from_key(private_key)
         tx = contract.functions.approve(
@@ -46,4 +46,4 @@ def buy(private_key: str, cycles: int) -> str:
 
 
 if __name__ == "__main__":
-    print(buy(input("Private key: "), input("Cycles: ")))
+    print(approve(input("Private key: "), input("Cycles: ")))
