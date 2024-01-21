@@ -4,9 +4,9 @@ from contracts_abi import (
 )  # import your own abi variable of whatever erc20 contract
 
 
-MANTLE_RPC = "YOUR_RPC"
+RPC = "YOUR_RPC"
 
-web3 = Web3(Web3.HTTPProvider(MANTLE_RPC))
+web3 = Web3(Web3.HTTPProvider(RPC))
 abi = erc20_abi
 amount = 10  # amount of ERC20 token to be approved
 contract = "0xabcdef..."  # whatever ERC20 contract address
