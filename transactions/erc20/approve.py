@@ -42,7 +42,7 @@ def approve(private_key: str, cycles: int) -> str:
         if receipt.status != 1:
             return f"Transaction {transaction_hash} failed!"
 
-        return f"Bridge hash: {transaction_hash}"
+        return f"Approve hash: {transaction_hash}"
 
 
 if __name__ == "__main__":
