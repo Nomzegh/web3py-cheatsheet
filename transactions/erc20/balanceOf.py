@@ -24,9 +24,9 @@ balanceOf_abi = """[
 ]
 """
 
-MANTLE_RPC = "https://rpc.ankr.com/bsc"
+BSC_RPC = "https://rpc.ankr.com/bsc"
 
-web3 = Web3(Web3.HTTPProvider(MANTLE_RPC))
+web3 = Web3(Web3.HTTPProvider(BSC_RPC))
 abi = balanceOf_abi
 contract = web3.to_checksum_address(
     "0xe9e7cea3dedca5984780bafc599bd69add087d56"
