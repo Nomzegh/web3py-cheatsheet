@@ -12,7 +12,7 @@ contract = web3.eth.contract("0x4200000000000000000000000000000000000010", abi=a
 # contract: https://explorer.mantle.xyz/address/0x4200000000000000000000000000000000000010
 # function: withdraw(address _l2Token, uint256 _amount, uint32 _l1Gas, bytes _data)
 
-def buy(private_key: str, cycles: int) -> str:
+def withdraw(private_key: str, cycles: int) -> str:
     for i in range(int(cycles)):
         account = web3.eth.account.from_key(private_key)
         tx = contract.functions.withdraw(
@@ -43,4 +43,4 @@ def buy(private_key: str, cycles: int) -> str:
 
 
 if __name__ == "__main__":
-    print(buy(input("Private key: "), input("Cycles: ")))
+    print(withdraw(input("Private key: "), input("Cycles: ")))
