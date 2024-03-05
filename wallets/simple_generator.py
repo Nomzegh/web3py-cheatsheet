@@ -1,3 +1,8 @@
+"""
+This code generates N quantity of private keys and their public addresses & creates
+private_keys.txt and public_keys.txt files as storage.
+"""
+
 from secrets import token_hex
 
 from eth_account import Account
