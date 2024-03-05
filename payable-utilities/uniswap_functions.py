@@ -4,7 +4,7 @@ Network: Binance Smart Chain
 Contracts: BNB (native), USDT
 """
 
-from uniswap import Uniswap
+from uniswap import Uniswap # pip install uniswap-python
 from web3 import Web3
 
 
